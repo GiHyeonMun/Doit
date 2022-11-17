@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>실습</title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+        <legend>User Information</legend>
+        <ul>
+          <li>
+            <label for="uid">ID</label>
+            <input type="text" id="uid" required autofocus placeholder="4~10 word without space">
+          </li>
+          <li>
+            <label for="umail">E mail</label>
+            <input type="email" id="umail" required >
+          </li>
+          <li>
+            <label for="upwd">password</label>
+            <input type="password" id="upwd" required placeholder="include Char,Int and SpecChar">
+          </li>
+          <li>
+            <label for="upwdc">Password Confirm</label>
+            <input type="password" id="upwdc" required>
+          </li>
+          <li>
+            <label id="path">SubscriptionPath</label>
+            <select id="path">
+                <option value="blog">Blog</option>
+                <option value="search">Search</option>
+                <option value="sns">SNS</option>
+                <option value="etc">ETC</option>
+            </select>
+          </li>
+          <li>
+            <label for="memo">Memo</label>
+            <textarea cols="40" rows="4" placeholder="Express your opinion."></textarea>
+          </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>Event and News</legend>
+        <ul>
+          <li>
+            <label>Receive Mail</label>
+            <input type="radio" name="Receive" value="yes">
+          </li>
+          <li>
+            <label>Do not Receive Mail</label>
+            <input type="radio" name="Receive" value="no" checked>
+          </li>
+        </ul>
+    </fieldset>
+    <div>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </div>
+  </form>
+</body>
+</html>
