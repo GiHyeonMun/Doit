@@ -14,8 +14,8 @@
     }
 
     function MakeRowSeat(nowRow) {
-        for(let x = 0; x < colNum; x++){
-            const SeatNo = nowRow * colNum + x;
+        for(let x = 1; x <= colNum; x++){
+            const SeatNo = nowRow * colNum + x ;
             if(seatNum > memNum) break;
             document.write('<td>좌석 ' + SeatNo + '</td>');
         }
