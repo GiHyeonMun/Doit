@@ -23,7 +23,9 @@
         var j = 0;
 
         if(Number !== null){
-            if(Number % 7 === 0){
+            if(isNaN(Number)){
+                document.write("숫자를 입력해주세요."); // 숫자 판별 
+            } else if(Number % 7 === 0){
                 document.write(Number + "<b>는 7의 배수입니다.");
             } else {
                 document.write(Number + "<b>는 7의 배수가 아닙니다.");
