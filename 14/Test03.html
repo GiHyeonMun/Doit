@@ -22,7 +22,9 @@
         var i;
         var j = 0;
 
-        if(Number !== null){
+        if(isNaN(Number)){
+            document.write("올바른 값을 입력 해주세요.")
+        } else if(Number !== null){
             if(isNaN(Number)){
                 document.write("숫자를 입력해주세요."); // 숫자 판별 
             } else if(Number % 7 === 0){

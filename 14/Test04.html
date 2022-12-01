@@ -22,7 +22,9 @@
         var i;
         var j = 0;
 
-        if(Number !== null){
+        if(isNaN(Number)){
+            document.write("숫자를 입력 해주세요.")
+        } else if(Number !== null){
             for(i = 1; i <= Number; i++){
               if( i % 7 === 0){
                 document.write( i + ", ");
